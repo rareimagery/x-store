@@ -1,0 +1,14 @@
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/libraries/
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/default/settings.php
+/web/sites/default/services.yml
+/config/sync/*
+*.sql
+*.tar.gz
+.DS_Store
+.idea/
