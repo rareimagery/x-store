@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61be9ddd9af9ac3146b553392ac630a3",
+    "content-hash": "515deb4cefd240bf0fd682b22c938e4f",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1541,6 +1541,53 @@
             "homepage": "https://www.drupal.org/project/ai",
             "support": {
                 "source": "https://git.drupalcode.org/project/ai"
+            }
+        },
+        {
+            "name": "drupal/ai_provider_x",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ai_provider_x.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ai_provider_x-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "6e9347f5417b8941d0f60debd3c35dbf871b9b98"
+            },
+            "require": {
+                "drupal/ai": "^1.0.4",
+                "drupal/core": "^10.2 || ^11",
+                "drupal/key": "^1.18",
+                "openai-php/client": ">=v0.10.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1742577826",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alvarodemendoza",
+                    "homepage": "https://www.drupal.org/user/1591644"
+                }
+            ],
+            "description": "This enables the use of X Ai for the Ai module.",
+            "homepage": "https://www.drupal.org/project/ai_provider_x",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ai_provider_x"
             }
         },
         {
