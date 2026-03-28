@@ -1,0 +1,10 @@
+uuid: b43a890d-8508-4eee-acd4-a97b86f5c101
+langcode: en
+status: true
+dependencies: {  }
+id: hoodie_variation
+label: Hoodie
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true
