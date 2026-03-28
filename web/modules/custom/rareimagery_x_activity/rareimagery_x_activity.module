@@ -8,6 +8,7 @@
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\node\Entity\Node;
 use Drupal\user\UserInterface;
+use Drupal\commerce_store\Entity\Store;
 
 /**
  * Implements hook_help().
@@ -29,11 +30,26 @@ function rareimagery_x_activity_help($route_name, RouteMatchInterface $route_mat
  * Implements hook_user_insert().
  */
 function rareimagery_x_activity_user_insert(UserInterface $account) {
-  // Create an 'X-users' node when a new user is created.
+  // 1. Create a Commerce Store for the user.
+  $store = Store::create([
+    'type' => 'online',
+    'name' => $account->getDisplayName() . "'s Store",
+    'mail' => $account->getEmail() ?: \Drupal::config('system.site')->get('mail'),
+    'default_currency' => 'USD',
+    'uid' => $account->id(),
+    'address' => [
+      'country_code' => 'US',
+    ],
+    'status' => 1,
+  ]);
+  $store->save();
+
+  // 2. Create an 'X-users' node when a new user is created.
   $node = Node::create([
     'type' => 'x_users',
     'title' => $account->getDisplayName(),
     'uid' => $account->id(),
+    'field_store' => $store->id(),
     'status' => 1,
   ]);
   $node->save();

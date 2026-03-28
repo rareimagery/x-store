@@ -1,0 +1,25 @@
+uuid: a3cd3cfb-1840-4899-a637-486eada2e5db
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+    - field.storage.node.field_store
+    - node.type.x_users
+id: node.x_users.field_store
+field_name: field_store
+entity_type: node
+bundle: x_users
+label: Store
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_store'
+  handler_settings:
+    target_bundles:
+      online: online
+field_type: entity_reference
+
