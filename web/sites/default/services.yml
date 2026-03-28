@@ -206,7 +206,7 @@ parameters:
     # Specifies allowed headers and sets the Access-Control-Allow-Headers
     # header. For example, ['X-Custom-Header']. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
-    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'X-CSRF-Token']
     # Specifies allowed request methods and sets the
     # Access-Control-Allow-Methods header. For example, ['POST', 'GET',
     # 'OPTIONS'] or ['*'] to allow all. Note the wildcard is not yet implemented
@@ -236,7 +236,7 @@ parameters:
     maxAge: false
     # Sets the Access-Control-Allow-Credentials header if set to true. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
-    supportsCredentials: false
+    supportsCredentials: true
 
   # The maximum number of entities stored in memory. Lowering this number can
   # reduce the amount of memory used in long-running processes like migrations,
