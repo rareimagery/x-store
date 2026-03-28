@@ -1,0 +1,9 @@
+name: RareImagery X Activity
+type: module
+description: Pulls X posts, stores profile data, syncs friends, and powers the "see your friends easier" feature.
+core_version_requirement: ^10 || ^11
+dependencies:
+  - social_auth:social_auth
+  - social_auth_twitter:social_auth_twitter
+  - user
+  - views

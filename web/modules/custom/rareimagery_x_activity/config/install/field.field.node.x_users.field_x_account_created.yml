@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_x_account_created
+    - node.type.x_users
+  module:
+    - datetime
+id: node.x_users.field_x_account_created
+field_name: field_x_account_created
+entity_type: node
+bundle: x_users
+label: 'X Account Created'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_x_last_sync
+    - node.type.x_users
+  module:
+    - datetime
+id: node.x_users.field_x_last_sync
+field_name: field_x_last_sync
+entity_type: node
+bundle: x_users
+label: 'X Last Sync'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

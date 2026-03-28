@@ -12,3 +12,5 @@
 *.tar.gz
 .DS_Store
 .idea/
+/.editorconfig
+/.gitattributes

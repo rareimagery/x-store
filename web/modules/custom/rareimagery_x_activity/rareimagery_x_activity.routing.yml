@@ -1,0 +1,15 @@
+rareimagery_x_activity.refresh_posts:
+  path: '/admin/config/services/rareimagery-x-activity/refresh'
+  defaults:
+    _form: '\Drupal\rareimagery_x_activity\Form\XRefreshPostsForm'
+    _title: 'Refresh X Posts'
+  requirements:
+    _permission: 'administer site configuration'
+
+rareimagery_x_activity.activity:
+  path: '/x-activity'
+  defaults:
+    _controller: '\Drupal\rareimagery_x_activity\Controller\XActivityController::build'
+    _title: 'X Activity'
+  requirements:
+    _permission: 'access content'

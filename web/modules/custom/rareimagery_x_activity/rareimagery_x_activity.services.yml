@@ -1,0 +1,4 @@
+services:
+  rareimagery_x_activity.sync:
+    class: Drupal\rareimagery_x_activity\Service\XActivitySync
+    arguments: ['@social_auth.user_manager', '@entity_type.manager']

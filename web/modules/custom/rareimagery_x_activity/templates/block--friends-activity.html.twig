@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a friends activity block.
+ *
+ * Available variables:
+ * - content: The content of this block.
+ * - attributes: HTML attributes for the wrapper element.
+ * - block: The block entity.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('block-friends-activity') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div{{ content_attributes.addClass('content') }}>
+      {{ content }}
+    </div>
+  {% endblock %}
+</div>

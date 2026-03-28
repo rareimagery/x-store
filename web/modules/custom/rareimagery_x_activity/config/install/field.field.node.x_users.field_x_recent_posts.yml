@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_x_recent_posts
+    - node.type.x_users
+  module:
+    - text
+id: node.x_users.field_x_recent_posts
+field_name: field_x_recent_posts
+entity_type: node
+bundle: x_users
+label: 'X Recent Posts'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

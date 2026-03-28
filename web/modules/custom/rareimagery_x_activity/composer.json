@@ -1,0 +1,7 @@
+{
+    "name": "drupal/rareimagery_x_activity",
+    "description": "Custom module for X-like activity functionality.",
+    "type": "drupal-custom-module",
+    "license": "GPL-2.0-or-later",
+    "require": {}
+}

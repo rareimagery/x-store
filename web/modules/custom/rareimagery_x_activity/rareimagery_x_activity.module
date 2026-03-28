@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Contains rareimagery_x_activity.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\Entity\Node;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_help().
+ */
+function rareimagery_x_activity_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the rareimagery_x_activity module.
+    case 'help.page.rareimagery_x_activity':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module for X-like activity functionality.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_user_insert().
+ */
+function rareimagery_x_activity_user_insert(UserInterface $account) {
+  // Create an 'X-users' node when a new user is created.
+  $node = Node::create([
+    'type' => 'x_users',
+    'title' => $account->getDisplayName(),
+    'uid' => $account->id(),
+    'status' => 1,
+  ]);
+  $node->save();
+}
+
+/**
+ * Implements hook_theme().
+ */
+function rareimagery_x_activity_theme() {
+  return [
+    'block__friends_activity' => [
+      'render element' => 'elements',
+      'base hook' => 'block',
+      'template' => 'block--friends-activity',
+    ],
+  ];
+}
