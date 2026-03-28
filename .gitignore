@@ -13,4 +13,4 @@
 .DS_Store
 .idea/
 /.editorconfig
-/.gitattributes
+/.gitattributes.output.txt
