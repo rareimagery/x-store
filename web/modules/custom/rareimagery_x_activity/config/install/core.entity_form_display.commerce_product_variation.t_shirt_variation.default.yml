@@ -1,0 +1,68 @@
+uuid: 4ba8938b-796e-4de2-b85e-e233eb626bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.t_shirt_variation
+    - field.field.commerce_product_variation.t_shirt_variation.attribute_color
+    - field.field.commerce_product_variation.t_shirt_variation.attribute_size
+    - field.field.commerce_product_variation.t_shirt_variation.field_images
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.t_shirt_variation.default
+targetEntityType: commerce_product_variation
+bundle: t_shirt_variation
+mode: default
+content:
+  attribute_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  attribute_size:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_images:
+    type: image_image
+    weight: 91
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 90
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

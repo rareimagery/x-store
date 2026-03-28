@@ -1,0 +1,10 @@
+uuid: 174413c1-e1f9-4015-a851-b4eb29828f0f
+langcode: en
+status: true
+dependencies: {  }
+id: t_shirt_variation
+label: T-Shirt
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true
