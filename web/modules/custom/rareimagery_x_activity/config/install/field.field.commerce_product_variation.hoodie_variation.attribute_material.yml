@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_attribute.size
+    - commerce_product.commerce_product_attribute.material
     - commerce_product.commerce_product_variation_type.hoodie_variation
-    - field.storage.commerce_product_variation.attribute_size
-id: commerce_product_variation.hoodie_variation.attribute_size
-field_name: attribute_size
+    - field.storage.commerce_product_variation.attribute_material
+id: commerce_product_variation.hoodie_variation.attribute_material
+field_name: attribute_material
 entity_type: commerce_product_variation
 bundle: hoodie_variation
-label: Size
+label: Material
 description: ''
 required: true
 translatable: false
@@ -19,5 +19,5 @@ settings:
   handler: 'default:commerce_product_attribute_value'
   handler_settings:
     target_bundles:
-      size: size
+      material: material
 field_type: entity_reference

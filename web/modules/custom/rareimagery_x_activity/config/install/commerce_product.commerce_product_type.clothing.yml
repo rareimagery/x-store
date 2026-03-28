@@ -1,4 +1,3 @@
-uuid: b7f52c34-caa2-4eee-8ba7-42ffdd692d6c
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +6,11 @@ label: Clothing
 traits: {  }
 locked: false
 description: ''
-variationTypes: {  }
+variationTypes:
+  - hat_variation
+  - hoodie_variation
+  - pants_variation
+  - shoes_variation
+  - t_shirt_variation
 multipleVariations: true
 injectVariationFields: true

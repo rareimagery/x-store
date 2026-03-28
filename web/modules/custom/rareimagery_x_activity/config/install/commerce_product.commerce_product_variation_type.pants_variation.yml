@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: hoodie_variation
-label: Hoodie
+id: pants_variation
+label: Pants
 traits: {  }
 locked: false
 orderItemType: default

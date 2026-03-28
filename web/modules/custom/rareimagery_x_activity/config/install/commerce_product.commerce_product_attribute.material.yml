@@ -1,6 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-id: size
-label: Size
+id: material
+label: Material
 elementType: select

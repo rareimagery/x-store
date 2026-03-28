@@ -1,15 +1,14 @@
-uuid: d8b8b857-d54a-4509-91dd-08b6cc8d5181
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_attribute.size
-    - commerce_product.commerce_product_variation_type.t_shirt
+    - commerce_product.commerce_product_variation_type.shoes_variation
     - field.storage.commerce_product_variation.attribute_size
-id: commerce_product_variation.t_shirt.attribute_size
+id: commerce_product_variation.shoes_variation.attribute_size
 field_name: attribute_size
 entity_type: commerce_product_variation
-bundle: t_shirt
+bundle: shoes_variation
 label: Size
 description: ''
 required: true

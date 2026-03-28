@@ -1,10 +1,10 @@
-uuid: 21c358a6-02b5-4a5f-858f-ed2f8fa5e443
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.hoodie_variation
     - field.field.commerce_product_variation.hoodie_variation.attribute_color
+    - field.field.commerce_product_variation.hoodie_variation.attribute_material
     - field.field.commerce_product_variation.hoodie_variation.attribute_size
     - field.field.commerce_product_variation.hoodie_variation.field_images
     - image.style.thumbnail
@@ -19,6 +19,12 @@ content:
   attribute_color:
     type: options_select
     weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  attribute_material:
+    type: options_select
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
